@@ -1,0 +1,23 @@
+{
+    "name": "GPT",
+    "description":"A Chrome extension for efficient internet browsing",
+    "version": "2.0",
+    "manifest_version":3,
+    "icons":{
+        "16":"neuorn2.jpg",
+        "32":"neuorn2.jpg",
+        "48":"neuorn2.jpg",
+        "128":"neuorn2.jpg"
+
+    },
+
+    "content_scripts": [
+        {
+          
+          "js": ["scripts/popup.js","scripts/content.js"],
+          "css": ["scripts/content.css"],
+          "matches": ["<all_urls>"]
+        }
+      ]
+
+}
